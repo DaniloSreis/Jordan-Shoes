@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --title: #181818;
+  --color-text: #f6f6f6;
+  --information: #474747;
+}
+
+div.disconto,
+div.marca {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+div.disconto {
+  background: #181818;
+  color: var(--color-text);
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+div.marca {
+  padding: 1rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+
+div.bg-img {
+  background: rgba(18, 18, 18, 70%)
+    url('img/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.svg') no-repeat
+    center center;
+  background-blend-mode: hue;
+  background-size: cover;
+  width: 100%;
+  min-height: 35rem;
+}
+
+div.info {
+  color: var(--color-text);
+  padding: 10rem 0 0 5rem;
+}
+
+div.sobre h1 {
+  font-size: 3.2rem;
+}
+
+div.sobre p {
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+}
+
+div.destaques {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+div.destaques p {
+  color: #474747;
+}
+
+section.grid-jordan {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin-top: 3rem;
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+
+div.img-jordan {
+  display: grid;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: #ebe9ea;
+}
+
+div.img-jordan img {
+  max-width: 90%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  padding: 2.5rem;
+  background: #181818;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+@media (max-width: 990px) {
+  section.grid-jordan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  div.img-jordan {
+    width: 80%;
+  }
+  div.img-jordan img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 50%;
+  }
+  div.bg-img {
+    min-height: 25rem;
+  }
+  div.info {
+    padding: 5rem 0 0 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  section.grid-jordan {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  div.img-jordan {
+    width: 30rem;
+    height: 22rem;
+  }
+}
